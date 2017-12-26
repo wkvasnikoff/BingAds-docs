@@ -1,0 +1,1 @@
+Custom parameters are helpful with sharing dynamic information across multiple URLs in a meaningful way for you to report on. For more information, see [Custom Parameters](/bingads/guides/url-tracking-upgraded-urls#customparametersvalidation).

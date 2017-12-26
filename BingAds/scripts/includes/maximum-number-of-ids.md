@@ -1,0 +1,1 @@
+The selector can only support up to 1,000 IDs. If more than 1,000 IDs are specified, the corresponding get() call will fail with a runtime error.
