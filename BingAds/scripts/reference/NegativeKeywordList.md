@@ -4,7 +4,7 @@ Represents a negative keyword list. For more information, see [Negative Keyword]
 |Method Name|Return Type|Description|
 |-|-|-
 [addNegativeKeyword(String keywordText)](#addnegativekeyword~string-keywordtext~)|void|Adds a keyword to the negative keywords list.
-[addNegativeKeywords(String keywordText)](#addnegativekeywords~string-keywordtext~)|void|Adds a list of keywords to the negative keywords list.
+[addNegativeKeywords(String[] keywordTexts)](#addnegativekeywords~string-keywordtexts~)|void|Adds a list of keywords to the negative keywords list.
 [getEntityType](#getentitytype)|String|Returns the entity type.
 [getId](#getid)|long|Returns the ID of this negative keyword list.
 [getName](#getname)|String|Returns the name of this negative keyword list.
@@ -27,7 +27,7 @@ keywordText|String|Text of the negative keyword.
 |-|-
 void|Returns nothing.
 
-## <a name="addnegativekeywords~string-keywordtext~"></a>addNegativeKeywords(String keywordText)
+## <a name="addnegativekeywords~string-keywordtexts~"></a>addNegativeKeywords(String[] keywordTexts)
 Adds a list of keywords to the negative keywords list. To specify match type for the new negative keyword:
 
 - negativeKeywordsList.addNegativeKeywords(["planes", "trains"]) - broad match.

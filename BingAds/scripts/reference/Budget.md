@@ -43,18 +43,12 @@ amount|double|Amount of the budget.
 void|Returns nothing.
 
 ## <a name="setdeliverymethod~string-method~"></a>setDeliveryMethod(String method)
-Set the delivery method for this budget. Supported values are:
-
-- STANDARD
-- ACCELERATED
-
-For more information, see [What are my budget options?](https://help.bingads.microsoft.com/#apex/3/en/51006/1).
-
+Set the delivery method for this budget. 
 
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
-method|String|Sets the delivery method of the budget.<br />
+method|String|The delivery method of the budget. Supported values are:<ul><li>STANDARD</li><li>ACCELERATED</li></ul><br /><br />For more information, see [What are my budget options?](https://help.bingads.microsoft.com/#apex/3/en/51006/1).<br />
 ### Returns:
 |Type|Description|
 |-|-
