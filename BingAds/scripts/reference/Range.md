@@ -14,9 +14,9 @@ This class represents a range of cells in a worksheet.
 [getRow](#getrow)|long|Returns the position of the row for this range.
 [getValue](#getvalue)|Object|Returns the value contained by the top-left cell in this range.
 [getValues](#getvalues)|Object[][]|Returns a two-dimensional array of values contained by this range, beginning with the top-left cell.
-[isBlank](#isblank)|Boolean|Returns a Boolean value that determines if this range is blank.
+[isBlank](#isblank)|Boolean|Returns a Boolean value that indicates if this range is blank.
 [setFontSize(long size)](#setfontsize~long-size~)|[Range](./Range)|Sets the specified point size to use for fonts on all the cells in this range.
-[setFontWeight(String fontWeight)](#setfontweight~string-fontweight~)|[Range](./Range)|Sets the specified point weight to use for fonts on all the cells in this range. Valid values include 'normal' and 'bold'.
+[setFontWeight(String fontWeight)](#setfontweight~string-fontweight~)|[Range](./Range)|Sets the specified font weight to use for all the cells in this range. Valid values include 'normal' and 'bold'.
 [setHorizontalAlignment(String alignment)](#sethorizontalalignment~string-alignment~)|[Range](./Range)|Sets the horizontal alignment of content in the cells in this range. Valid values include 'left', 'center' or 'normal'.
 [setValue(Object value)](#setvalue~object-value~)|[Range](./Range)|Sets the value to all cells in this range.
 [setValues(Object[][] values)](#setvalues~object[]-values~)|[Range](./Range)|Sets the specified values to the cells in this range, assigning each value to the cell based on matching row and column positions. The dimensions of the input value array must match the dimensions of this range.
@@ -103,7 +103,7 @@ Returns a two-dimensional array of values contained by this range, beginning wit
 Object[][]|
 
 ## <a name="isblank"></a>isBlank
-Returns a Boolean value that determines if this range is blank.
+Returns a Boolean value that indicates if this range is blank.
 
 ### Returns:
 |Type|Description|
@@ -119,7 +119,7 @@ Sets the specified point size to use for fonts on all the cells in this range.
 [Range](./Range)|
 
 ## <a name="setfontweight~string-fontweight~"></a>setFontWeight(String fontWeight)
-Sets the specified point weight to use for fonts on all the cells in this range. Valid values include 'normal' and 'bold'.
+Sets the specified font weight to use for all the cells in this range. Valid values include 'normal' and 'bold'.
 
 ### Arguments:
 |Name|Type|Description|
