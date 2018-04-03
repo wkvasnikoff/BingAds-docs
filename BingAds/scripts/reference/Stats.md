@@ -1,5 +1,5 @@
 # Stats
-Provides statistics related to the different entity types.
+Provides statistics related to a specific entity type.
 
 
 Example usage:
@@ -15,11 +15,11 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [getAverageCpc](#getaveragecpc)|double|Returns the average cost per click.
-[getAverageCpm](#getaveragecpm)|double|Returns the average cost per thousand impressions of the associated entity.<br />
+[getAverageCpm](#getaveragecpm)|double|Returns the average cost per thousand impressions.
 [getAveragePosition](#getaverageposition)|double|Returns the average position.
-[getClickConversionRate](#getclickconversionrate)|double|Returns the conversion rate for clicks of the associated entity within the 0..1 range.<br />
+[getClickConversionRate](#getclickconversionrate)|double|Returns the conversion rate for clicks within the 0..1 range.<br />
 [getClicks](#getclicks)|long|Returns the number of clicks.
-[getConvertedClicks](#getconvertedclicks)|long|Returns the number of clicks that converted of the associated entity.<br />
+[getConvertedClicks](#getconvertedclicks)|long|Returns the number of clicks that converted.
 [getCost](#getcost)|double|Returns the cost (spend) in the currency of the current account.
 [getCtr](#getctr)|double|Returns the click through rate within the 0..1 range.
 [getImpressions](#getimpressions)|long|Returns the number of impressions.
@@ -33,8 +33,7 @@ Returns the average cost per click.
 double|Average cost per click.
 
 ## <a name="getaveragecpm"></a>getAverageCpm
-Returns the average cost per thousand impressions of the associated entity.
-
+Returns the average cost per thousand impressions.
 
 ### Returns:
 |Type|Description|
@@ -50,7 +49,7 @@ Returns the average position.
 double|Average position.
 
 ## <a name="getclickconversionrate"></a>getClickConversionRate
-Returns the conversion rate for clicks of the associated entity within the 0..1 range.
+Returns the conversion rate for clicks within the 0..1 range.
 
 
 ### Returns:
@@ -67,8 +66,7 @@ Returns the number of clicks.
 long|Number of clicks.
 
 ## <a name="getconvertedclicks"></a>getConvertedClicks
-Returns the number of clicks that converted of the associated entity.
-
+Returns the number of clicks that converted.
 
 ### Returns:
 |Type|Description|
