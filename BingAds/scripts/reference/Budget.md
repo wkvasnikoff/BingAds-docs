@@ -48,7 +48,7 @@ Set the delivery method for this budget.
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
-method|String|The delivery method of the budget. Supported values are:<ul><li>STANDARD</li><li>ACCELERATED</li></ul><br /><br />For more information, see [What are my budget options?](https://help.bingads.microsoft.com/#apex/3/en/51006/1).<br />
+method|String|The delivery method of the budget. Supported values are:<ul><li>STANDARD</li><li>ACCELERATED</li></ul><br />For more information, see [What are my budget options?](https://help.bingads.microsoft.com/#apex/3/en/51006/1).<br />
 ### Returns:
 |Type|Description|
 |-|-
