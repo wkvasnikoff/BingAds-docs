@@ -4,7 +4,7 @@ Represents a budget. For more information, see [Budget](/bingads/guides/entity-h
 |Method Name|Return Type|Description|
 |-|-|-
 [getAmount](#getamount)|double|Returns the budget's amount in the account's currency.
-[getDeliveryMethod](#getdeliverymethod)|String|Returns the delivery method for this budget.
+[getDeliveryMethod](#getdeliverymethod)|String|Returns the delivery method (budget type) for this budget.
 [setAmount(double amount)](#setamount~double-amount~)|void|Sets the budget's amount (in the account's currency) to the specified value.
 [setDeliveryMethod(String method)](#setdeliverymethod~string-method~)|void|Set the delivery method for this budget.
 
@@ -17,7 +17,7 @@ Returns the budget's amount in the account's currency.
 double|Amount of the budget.
 
 ## <a name="getdeliverymethod"></a>getDeliveryMethod
-Returns the delivery method for this budget.  Possible return values are:
+Returns the delivery method (budget type) for this budget.  Possible return values are:
 
 - STANDARD
 - ACCELERATED

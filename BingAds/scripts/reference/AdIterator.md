@@ -16,7 +16,7 @@ See also:
 |Method Name|Return Type|Description|
 |-|-|-
 [hasNext](#hasnext)|boolean|Returns a Boolean value that determines if this iterator has more elements.
-[next](#next)|[Ad](./Ad)|Advances to the next ad in this iterator and returns it.
+[next](#next)|[Ad](./Ad)|Advances the iterator and returns the next ad.
 [totalNumEntities](#totalnumentities)|int|Returns the number of ads matched by the selector which generated this iterator.
 
 ## <a name="hasnext"></a>hasNext
@@ -28,7 +28,7 @@ Returns a Boolean value that determines if this iterator has more elements.
 boolean|Boolean value that determines if this iterator has more elements.
 
 ## <a name="next"></a>next
-Advances to the next ad in this iterator and returns it.
+Advances the iterator and returns the next ad.
 
 ### Returns:
 |Type|Description|

@@ -7,8 +7,8 @@ Represents an ad group.  For more information, see [Ad Group](/bingads/guides/en
 [getEntityType](#getentitytype)|String|Returns the entity type.
 [getId](#getid)|long|Returns the ID of this ad group.
 [getName](#getname)|String|Returns the name of this ad group.
-[isEnabled](#isenabled)|Boolean|Returns a Boolean value that determines if this ad group is enabled.
-[isPaused](#ispaused)|Boolean|Returns a Boolean value that determines if this ad group is paused.
+[isEnabled](#isenabled)|Boolean|Returns a Boolean value that indicates if this ad group is enabled.
+[isPaused](#ispaused)|Boolean|Returns a Boolean value that indicates if this ad group is paused.
 [newAd](#newad)|[AdBuilderSpace](./AdBuilderSpace)|Returns a new ad builder space associated with this ad group, which is used to construct a new ad.
 [newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder)|Returns a new keyword builder associated with this ad group that is used to construct a new keyword.
 [pause](#pause)|void|Pauses this ad group.
@@ -48,7 +48,7 @@ Returns the name of this ad group.
 String|Name of the ad group.
 
 ## <a name="isenabled"></a>isEnabled
-Returns a Boolean value that determines if this ad group is enabled.
+Returns a Boolean value that indicates if this ad group is enabled.
 
 ### Returns:
 |Type|Description|
@@ -56,7 +56,7 @@ Returns a Boolean value that determines if this ad group is enabled.
 Boolean|Boolean value that determines if this ad group is enabled.
 
 ## <a name="ispaused"></a>isPaused
-Returns a Boolean value that determines if this ad group is paused.
+Returns a Boolean value that indicates if this ad group is paused.
 
 ### Returns:
 |Type|Description|
@@ -93,7 +93,7 @@ Sets the name of this ad group.
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
-name|String|Name of the ad group. Can contain a maximum of 256 characters, and must be unique among all active ad groups within the campaign.
+name|String|Name of the ad group. See [Ad Group](https://docs.microsoft.com/en-us/bingads/guides/entity-hierarchy-limits?view=bingads-11#adgroup).
 ### Returns:
 |Type|Description|
 |-|-

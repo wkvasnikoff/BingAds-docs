@@ -21,8 +21,8 @@ See also:
 [getStats](#getstats)|[Stats](./Stats)|Returns statistics for this keyword.
 [getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns an object which provides performance metrics for the predefined date range.
 [getText](#gettext)|String|Returns the text of this keyword.
-[isEnabled](#isenabled)|Boolean|Returns a Boolean value that determines if this keyword is enabled.
-[isPaused](#ispaused)|Boolean|Returns a Boolean value that determines if this keyword is paused.
+[isEnabled](#isenabled)|Boolean|Returns a Boolean value that indicates if this keyword is enabled.
+[isPaused](#ispaused)|Boolean|Returns a Boolean value that indicates if this keyword is paused.
 [pause](#pause)|void|Pauses this keyword.
 [remove](#remove)|void|Removes this keyword.
 [urls](#urls)|[KeywordUrls](./KeywordUrls)|Returns the URL fields of this keyword.
@@ -131,7 +131,7 @@ Returns the text of this keyword. The text is returned in one of the following f
 String|Text of this keyword.
 
 ## <a name="isenabled"></a>isEnabled
-Returns a Boolean value that determines if this keyword is enabled.
+Returns a Boolean value that indicates if this keyword is enabled.
 
 ### Returns:
 |Type|Description|
@@ -139,7 +139,7 @@ Returns a Boolean value that determines if this keyword is enabled.
 Boolean|Boolean value that determines if this keyword is enabled.
 
 ## <a name="ispaused"></a>isPaused
-Returns a Boolean value that determines if this keyword is paused.
+Returns a Boolean value that indicates if this keyword is paused.
 
 ### Returns:
 |Type|Description|

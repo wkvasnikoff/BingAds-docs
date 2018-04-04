@@ -26,7 +26,7 @@ See also:
 |-|-|-
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[AdSelector](./AdSelector)|Returns a selector with the start and end dates applied.
 [forDateRange(String dateRange)](#fordaterange~string-daterange~)|[AdSelector](./AdSelector)|Returns a selector with the predefined date range applied.
-[get](#get)|[AdIterator](./AdIterator)|Returns an iterator that you use to get ads based on the selector's selection criteria.
+[get](#get)|[AdIterator](./AdIterator)|Returns an ad iterator based on the selector's selection criteria.
 [orderBy(String orderBy)](#orderby~string-orderby~)|[AdSelector](./AdSelector)|Returns a selector with the specified ordering applied.
 [withCondition(String condition)](#withcondition~string-condition~)|[AdSelector](./AdSelector)|Returns a selector that limits the ads it returns to those that match the filter criteria.
 [withIds(long[] ids)](#withids~long-ids~)|[AdSelector](./AdSelector)|Returns a selector that returns only ads with the specified IDs.
@@ -88,7 +88,7 @@ dateRange|String|Date range to set onto the selector.
 [AdSelector](./AdSelector)|Selector with date range applied.
 
 ## <a name="get"></a>get
-Returns an iterator that you use to get ads based on the selector's selection criteria.
+Returns an ad iterator based on the selector's selection criteria.
 
 ### Returns:
 |Type|Description|

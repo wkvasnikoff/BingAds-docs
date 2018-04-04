@@ -5,7 +5,7 @@ Provides methods for selecting accounts. For information about Selectors, see [S
 |-|-|-
 [executeInParallel(String functionName, String optionalCallbackFunctionName)](#executeinparallel~string-functionname_-string-optionalcallbackfunctionname~)|void|Executes the function indicated by functionName on each BingAdsAccount matched by this selector and optionally invokes the callback function indicated by optionalCallbackFunctionName.
 [executeInParallel(String functionName, String optionalCallbackFunctionName, String optionalInput)](#executeinparallel~string-functionname_-string-optionalcallbackfunctionname_-string-optionalinput~)|void|Executes the function indicated by functionName on each BingAdsAccount matched by this selector and optionally invokes the callback function indicated by optionalCallbackFunctionName. The optional optionalInput argument will be used in the parallel function execution, if specified.
-[get](#get)|[BingAdsAccountIterator](./BingAdsAccountIterator)|Returns an iterator that you use to get accounts based on the selector's selection criteria.
+[get](#get)|[BingAdsAccountIterator](./BingAdsAccountIterator)|Returns an account iterator based on the selector's selection criteria.
 [orderBy(String orderBy)](#orderby~string-orderby~)|[BingAdsAccountSelector](./BingAdsAccountSelector)|Returns a selector with the specified ordering applied.
 [withAccountNumbers(String[] accountNumbers)](#withaccountnumbers~string-accountnumbers~)|[BingAdsAccountSelector](./BingAdsAccountSelector)|Returns a selector that will return only bing ads accounts with the specified account numbers.
 [withCondition(String condition)](#withcondition~string-condition~)|[BingAdsAccountSelector](./BingAdsAccountSelector)|Returns a selector that limits the accounts it returns to those that match the filter criteria.
@@ -29,7 +29,7 @@ Executes the function indicated by functionName on each BingAdsAccount matched b
 void|Returns nothing.
 
 ## <a name="get"></a>get
-Returns an iterator that you use to get accounts based on the selector's selection criteria.
+Returns an account iterator based on the selector's selection criteria.
 
 ### Returns:
 |Type|Description|

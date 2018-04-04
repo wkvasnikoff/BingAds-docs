@@ -24,7 +24,7 @@ See also:
 |-|-|-
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector with the start and end dates applied.
 [forDateRange(String dateRange)](#fordaterange~string-daterange~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector with the predefined date range applied.
-[get](#get)|[AdGroupIterator](./AdGroupIterator)|Returns an iterator that you use to get ad groups based on the selector's selection criteria.
+[get](#get)|[AdGroupIterator](./AdGroupIterator)|Returns an ad group iterator based on the selector's selection criteria.
 [orderBy(String orderBy)](#orderby~string-orderby~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector with the specified ordering applied.
 [withCondition(String condition)](#withcondition~string-condition~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector that limits the ad groups it returns to those that match the filter criteria.
 [withIds(long[] ids)](#withids~long-ids~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector that returns only ad groups with the specified IDs.
@@ -56,7 +56,7 @@ dateRange|String|Date range to apply to the selector.
 [AdGroupSelector](./AdGroupSelector)|Selector with date range applied.
 
 ## <a name="get"></a>get
-Returns an iterator that you use to get ad groups based on the selector's selection criteria.
+Returns an ad group iterator based on the selector's selection criteria.
 
 ### Returns:
 |Type|Description|

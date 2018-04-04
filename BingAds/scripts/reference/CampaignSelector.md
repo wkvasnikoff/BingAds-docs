@@ -25,7 +25,7 @@ See also:
 |-|-|-
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[CampaignSelector](CampaignSelector)|Returns a selector with the start and end dates applied.
 [forDateRange(String dateRange)](#fordaterange~string-daterange~)|[CampaignSelector](./CampaignSelector)|Returns a selector with the predefined date range applied.
-[get](#get)|[CampaignIterator](./CampaignIterator)|Returns an iterator that you use to get campaigns based on the selector's selection criteria.
+[get](#get)|[CampaignIterator](./CampaignIterator)|Returns a campaign iterator based on the selector's selection criteria.
 [orderBy(String orderBy)](#orderby~string-orderby~)|[CampaignSelector](./CampaignSelector)|Returns a selector with the specified ordering applied.
 [withCondition(String condition)](#withcondition~string-condition~)|[CampaignSelector](./CampaignSelector)|Returns a selector that limits the campaigns it returns to those that match the filter criteria.
 [withIds(long[] ids)](#withids~long-ids~)|[CampaignSelector](./CampaignSelector)|Returns a selector that returns only campaigns with the specified IDs.
@@ -57,7 +57,7 @@ dateRange|String|Date range to apply to the selector.
 [CampaignSelector](./CampaignSelector)|Selector with date range applied.
 
 ## <a name="get"></a>get
-Returns an iterator that you use to get campaigns based on the selector's selection criteria.
+Returns a campaign iterator based on the selector's selection criteria.
 
 ### Returns:
 |Type|Description|

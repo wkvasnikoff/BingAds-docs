@@ -11,10 +11,10 @@ Represents a campaign. For more information, see [Campaign](/bingads/guides/enti
 [getEntityType](#getentitytype)|String|Returns the entity type.
 [getId](#getid)|long|Returns the ID of this campaign.
 [getName](#getname)|String|Returns the name of this campaign.
-[getStats](#getstats)|[Stats](./Stats)|Returns an object which provides statistics for the campaign.
+[getStats](#getstats)|[Stats](./Stats)|Returns an object which provides performance metrics for the campaign.
 [isEnabled](#isenabled)|boolean|Returns a Boolean value that determines if this campaign is enabled.
-[isPaused](#ispaused)|Boolean|Returns a Boolean value that determines if this campaign is paused.
-[isRemoved](#isremoved)|Boolean|Returns a Boolean value that determines if this campaign is removed.
+[isPaused](#ispaused)|Boolean|Returns a Boolean value that indicates if this campaign is paused.
+[isRemoved](#isremoved)|Boolean|Returns a Boolean value that indicates if this campaign is removed (deleted).
 [pause](#pause)|void|Pauses this campaign.
 [remove](#remove)|void|Removes this campaign.
 [setName(String name)](#setname~string-name~)|void|Sets the name of this campaign.
@@ -92,7 +92,7 @@ Returns the name of this campaign.
 String|Name of this campaign.
 
 ## <a name="getstats"></a>getStats
-Returns an object which provides statistics for the campaign. 
+Returns an object which provides performance metrics for the campaign. 
 
 ### Returns:
 |Type|Description|
@@ -108,7 +108,7 @@ Returns a Boolean value that determines if this campaign is enabled.
 boolean|Boolean value that determines if this campaign is enabled.
 
 ## <a name="ispaused"></a>isPaused
-Returns a Boolean value that determines if this campaign is paused.
+Returns a Boolean value that indicates if this campaign is paused.
 
 ### Returns:
 |Type|Description|
@@ -116,7 +116,7 @@ Returns a Boolean value that determines if this campaign is paused.
 Boolean|Boolean value that determines if this campaign is paused.
 
 ## <a name="isremoved"></a>isRemoved
-Returns a Boolean value that determines if this campaign is removed.
+Returns a Boolean value that indicates if this campaign is removed (deleted).
 
 ### Returns:
 |Type|Description|

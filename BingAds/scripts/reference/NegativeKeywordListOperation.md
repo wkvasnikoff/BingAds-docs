@@ -5,7 +5,7 @@ Represents the definition of a negative keywords list constructed via [NegativeK
 |-|-|-
 [getErrors](#geterrors)|String[]|Returns an empty array if the negative keywords list is successfully created; otherwise, it contains the list of errors.
 [getResult](#getresult)|[NegativeKeywordList](./NegativeKeywordList)|Returns the newly created negative keywords list, otherwise returns null if this operation failed to execute.
-[isSuccessful](#issuccessful)|Boolean|Returns a Boolean value that determines if this operation was successful.
+[isSuccessful](#issuccessful)|Boolean|Returns a Boolean value that indicates if this operation was successful.
 
 ## <a name="geterrors"></a>getErrors
 Returns an empty array if the negative keywords list is successfully created; otherwise, it contains the list of errors.
@@ -24,7 +24,7 @@ Returns the newly created negative keywords list, otherwise returns null if this
 [NegativeKeywordList](./NegativeKeywordList)|Newly created negative keywords list, otherwise returns null if this operation failed to execute.
 
 ## <a name="issuccessful"></a>isSuccessful
-Returns a Boolean value that determines if this operation was successful.
+Returns a Boolean value that indicates if this operation was successful.
 
 ### Returns:
 |Type|Description|

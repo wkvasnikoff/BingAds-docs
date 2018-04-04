@@ -6,7 +6,7 @@ Represents the definition of an ad. The ad is added to the campaign only when on
 |-|-|-
 [getErrors](#geterrors)|String[]|Returns an empty array if the ad is successfully created; otherwise, it contains the list of errors.
 [getResult](#getresult)|[AdGroup](./AdGroup)|Returns the newly created ad, otherwise returns null if this operation failed to execute.
-[isSuccessful](#issuccessful)|Boolean|Returns a Boolean value that determines if this operation was successful.
+[isSuccessful](#issuccessful)|Boolean|Returns a Boolean value that indicates if this operation was successful.
 
 ## <a name="geterrors"></a>getErrors
 Returns an empty array if the ad is successfully created; otherwise, it contains the list of errors.
@@ -25,7 +25,7 @@ Returns the newly created ad, otherwise returns null if this operation failed to
 [AdGroup](./AdGroup)|Newly created ad, otherwise returns null if this operation failed to execute.
 
 ## <a name="issuccessful"></a>isSuccessful
-Returns a Boolean value that determines if this operation was successful.
+Returns a Boolean value that indicates if this operation was successful.
 
 ### Returns:
 |Type|Description|

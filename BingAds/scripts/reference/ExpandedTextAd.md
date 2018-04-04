@@ -20,8 +20,8 @@ Represents an expanded text ad in Bing Ads. For information, see [Ad Extensions]
 [getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|[Stats](./Stats)|Returns an object which provides statistics for the specified date range.
 [getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns an object which provides statistics for the specified predefined date range.
 [getType](#gettype)|String|Returns the type of this ad.
-[isEnabled](#isenabled)|Boolean|Returns a Boolean value that determines if this ad is enabled.
-[isPaused](#ispaused)|Boolean|Returns a Boolean value that determines if this ad is paused.
+[isEnabled](#isenabled)|Boolean|Returns a Boolean value that indicates if this ad is enabled.
+[isPaused](#ispaused)|Boolean|Returns a Boolean value that indicates if this ad is paused.
 [isType](#istype)|[AdTypeSpace](./AdTypeSpace)|Returns an object which provides more information about the type of this ad.
 [pause](#pause)|void|Pauses this ad.
 [remove](#remove)|void|Removes this ad.
@@ -173,7 +173,7 @@ Returns the type of this ad. Possible values are:
 String|Type of the ad.
 
 ## <a name="isenabled"></a>isEnabled
-Returns a Boolean value that determines if this ad is enabled.
+Returns a Boolean value that indicates if this ad is enabled.
 
 ### Returns:
 |Type|Description|
@@ -181,7 +181,7 @@ Returns a Boolean value that determines if this ad is enabled.
 Boolean|Boolean value that determines if this ad is enabled.
 
 ## <a name="ispaused"></a>isPaused
-Returns a Boolean value that determines if this ad is paused.
+Returns a Boolean value that indicates if this ad is paused.
 
 ### Returns:
 |Type|Description|
