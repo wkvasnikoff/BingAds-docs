@@ -6,6 +6,7 @@ Provides methods for selecting accounts. For information about Selectors, see [S
 [executeInParallel(String functionName, String optionalCallbackFunctionName)](#executeinparallel~string-functionname_-string-optionalcallbackfunctionname~)|void|Executes the function indicated by functionName on each BingAdsAccount matched by this selector and optionally invokes the callback function indicated by optionalCallbackFunctionName.
 [executeInParallel(String functionName, String optionalCallbackFunctionName, String optionalInput)](#executeinparallel~string-functionname_-string-optionalcallbackfunctionname_-string-optionalinput~)|void|Executes the function indicated by functionName on each BingAdsAccount matched by this selector and optionally invokes the callback function indicated by optionalCallbackFunctionName. The optional optionalInput argument will be used in the parallel function execution, if specified.
 [get](#get)|[BingAdsAccountIterator](./BingAdsAccountIterator)|Returns an iterator that you use to get accounts based on the selector's selection criteria.
+[orderBy(String orderBy)](#orderby~string-orderby~)|[BingAdsAccountSelector](./BingAdsAccountSelector)|Returns a selector with the specified ordering applied.
 [withAccountNumbers(String[] accountNumbers)](#withaccountnumbers~string-accountnumbers~)|[BingAdsAccountSelector](./BingAdsAccountSelector)|Returns a selector that will return only bing ads accounts with the specified account numbers.
 [withCondition(String condition)](#withcondition~string-condition~)|[BingAdsAccountSelector](./BingAdsAccountSelector)|Returns a selector that limits the accounts it returns to those that match the filter criteria.
 [withIds(long[] ids)](#withids~long-ids~)|[BingAdsAccountSelector](./BingAdsAccountSelector)|Returns a selector that returns only accounts with the specified IDs.
@@ -35,6 +36,29 @@ Returns an iterator that you use to get accounts based on the selector's selecti
 |-|-
 [BingAdsAccountIterator](./BingAdsAccountIterator)|Iterator that you use to get accounts based on the selector's selection criteria.
 
+## <a name="orderby~string-orderby~"></a>orderBy(String orderBy)
+Returns a selector with the specified ordering applied. Specify the orderBy parameter in the form, "columnName orderDirection" where:
+
+- columnName is a supported column, see [Supported Columns](#supported-bingads-account-columns).
+- orderDirection is the direction to order the results in. Set to ASC to order the results in ascending order or DESC to order the results in descending order. The default is ASC.
+
+
+For example, the following call returns results in ascending order by AverageCpc.
+
+<code>bingAdsAccountSelector = bingAdsAccountSelector.orderBy("AverageCpc");</code>
+
+
+Only one orderBy column is supported.
+
+### Arguments:
+|Name|Type|Description|
+|-|-|-
+orderBy|String|Ordering to apply.
+### Returns:
+|Type|Description|
+|-|-
+[BingAdsAccountSelector](./BingAdsAccountSelector)|Selector with ordering applied.
+
 ## <a name="withaccountnumbers~string-accountnumbers~"></a>withAccountNumbers(String[] accountNumbers)
 Returns a selector that will return only bing ads accounts with the specified account numbers. 
 The resulting selector can be further filtered by applying additional conditions to it.  All conditions will be 'AND' concatenated including any other ID based conditions.  For example:
@@ -59,66 +83,34 @@ accountNumbers|String[]|Array of account numbers.<br />
 [BingAdsAccountSelector](./BingAdsAccountSelector)|Selector restricted to the specified account numbers.
 
 ## <a name="withcondition~string-condition~"></a>withCondition(String condition)
-Returns a selector that limits the accounts it returns to those that match the filter criteria. Multiple conditions may be chained together:
+Returns a selector that limits the accounts it returns to those that match the filter criteria. Specify the condition parameter in the form, "columnName operator value" where: 
 
-```javascript
-selector = selector
-	.withCondition("Clicks > 5")
-	.withCondition("Name = 'Contoso'");
-```
-
-Specify the condition parameter in the form, "columnName operator value" where: 
-
-- columnName is the name of a performance metric to order the results by. For a list of possible values, see [Supported Columns](#supported-ad-group-columns).  If you set columName to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange~string-daterange~) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~).
+- columnName is a supported column, see [Supported Columns](#supported-bingads-account-columns).  If you set columName to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange~string-daterange~) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~).
 - operator is one of the supported [operators](#operators).
 
-### Operators
-The operator that can be used in a condition depends on the type of column. 
-For Integer and Long columns: 
+[!INCLUDE[operators](../includes/operators.md)]
 
-```
-<  <=  >  >=  =  !=
-```
-For Double columns: 
-```
-<  >
-```
-For String columns: 
-```
-=  !=  STARTS_WITH  STARTS_WITH_IGNORE_CASE  CONTAINS
- CONTAINS_IGNORE_CASE  DOES_NOT_CONTAIN  DOES_NOT_CONTAIN_IGNORE_CASE
-```
-For Enumeration columns: 
-```
-=  !=  IN []  NOT_IN []
-```
-
-Operators are case-sensitive: `starts_with` won't work. 
-
-<a name="supported-ad-group-columns"></a>
+<a name="supported-bingads-account-columns"></a>
 ### Supported Columns
+Supported columns for Bing Ads account filtering. 
 
-All columns are case-sensitive.
 |Column|Type|Example|
-|-|-|-|-
+|-|-|-
 <strong>Stats</strong>|
-AverageCpc|double|`withCondition("AverageCpc < 1.45")`|
-AverageCpm|double|`withCondition("AverageCpm > 0.48")`|
-AveragePosition|double|`withCondition("AveragePosition > 7.5")`|
-Clicks|long|`withCondition("Clicks >= 21")`|
-ConversionRate|double|`withCondition("ConversionRate > 0.1")`|
-Conversions|long|`withCondition("Conversions <= 4")`|
-Cost|double|`withCondition("Cost > 4.48")`. The value is in the currency of the account.|
-Ctr|double|`withCondition("Ctr > 0.01")`. Note that Ctr is returned in 0..1 range, so 5% Ctr is represented as 0.05.|
-CurrencyCode|String|`withCondition("CurrencyCode = 'USD'")`. The three-letter ISO 4217-formatted currency code of the account.
-DateTimeZone|String|`withCondition("DateTimeZone = 'PacificTimeUSCanadaTijuana'")`.
-Impressions|long|`withCondition("Impressions != 0")`|
-LabelNames|Array|`withCondition("LabelNames CONTAINS 'priority'")`|
-ManagerCustomerId|Account ID|`withCondition("ManagerCustomerId IN ['123', '456', '789']")`. Used to select child accounts belonging to a specific submanager.|
-Name|String|`withCondition("Name = 'Contoso'")`. The name used by the manager to refer to the client.
-&nbsp;|&nbsp;|&nbsp;|
-
-If a stats column is used in the condition, date range must also be specified using forDateRange.
+AverageCpc|double|`withCondition("AverageCpc < 1.45")`
+AverageCpm|double|`withCondition("AverageCpm > 0.48")`
+AveragePosition|double|`withCondition("AveragePosition > 7.5")`
+Clicks|long|`withCondition("Clicks >= 21")`
+ConversionRate|double|`withCondition("ConversionRate > 0.1")`
+Conversions|long|`withCondition("Conversions <= 4")`
+Cost|double|`withCondition("Cost > 4.48")`<br /> The value is in the currency of the account.
+Ctr|double|`withCondition("Ctr > 0.01")`<br /> Note that the Ctr is in the range 0..1, so a 5% Ctr is represented as 0.05.
+CurrencyCode|String|`withCondition("CurrencyCode = 'USD'")`<br /> The three-letter ISO 4217-formatted currency code of the account.
+DateTimeZone|String|`withCondition("DateTimeZone = 'America/New_York'")`<br /> The local timezone ID for the account.
+Impressions|long|`withCondition("Impressions != 0")`
+LabelNames|Array|`withCondition("LabelNames CONTAINS 'priority'")`
+ManagedCustomerId|Account ID|`withCondition("ManagerCustomerId IN ['123-456-7890']")` or `withCondition("ManagerCustomerId IN [1234567890]")`<br /> Used to select child accounts belonging to a specific submanager.
+Name|String|`withCondition("Name = 'Contoso'")`<br /> The name used by the manager to refer to the client.
 
 ### Returns:
 |Type|Description|
