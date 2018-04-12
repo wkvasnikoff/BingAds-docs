@@ -44,14 +44,14 @@ void|Returns nothing.
 Returns the campaign's bidding strategy. Possible return values are:
 
 <ul>
-  <li>ManualCpc</li>
-  <li>MaxClicks</li>
-  <li>MaxConversions</li>
-  <li>EnhancedCpc</li>
-  <li>TargetCpa</li>
+  <li>MANUAL_CPC</li>
+  <li>TARGET_SPEND</li>
+  <li>MAXIMIZE_CONVERSIONS</li>
+  <li>ENHANCED_CPC</li>
+  <li>TARGET_CPA</li>
 </ul>
 
-For more information, see [Bid Strategy Types](/bingads/guides/budget-bid-strategies#bidstrategytypes).
+For more information, see [Bid Strategies](../concepts/bid-strategies.md).
 
 
 ### Returns:

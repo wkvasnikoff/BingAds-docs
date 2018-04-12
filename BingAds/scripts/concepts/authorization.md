@@ -18,5 +18,5 @@ Scripts created in Bing Ads Scripts run in the context of the user that is signe
 ### Next Steps
 
 > [!div class="nextstepaction"]
-> [Review the reference guide](../reference/BingAdsApp.md)
+> [Learn about bid strategies](../bid-strategies.md)
 

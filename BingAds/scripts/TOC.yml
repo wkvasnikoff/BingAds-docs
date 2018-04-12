@@ -6,6 +6,8 @@
   items:
     - name: Authorization
       href: /bingads/scripts/concepts/authorization
+    - name: Bid Strategies
+      href: /bingads/scripts/concepts/bid-strategies
     - name: Preview Mode
       href: /bingads/scripts/concepts/preview-mode          
     - name: Selectors
