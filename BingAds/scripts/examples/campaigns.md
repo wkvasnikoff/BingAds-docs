@@ -1,5 +1,7 @@
 # Campaigns
 
+[!INCLUDE[preview-note](../includes/preview-note.md)]
+
 ## Get all campaigns
 ```javascript
 function getAllCampaigns() {

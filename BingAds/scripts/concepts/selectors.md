@@ -11,6 +11,8 @@ ms.topic: "article"
 
 # Selectors
 
+[!INCLUDE[preview-note](../includes/preview-note.md)]
+
 Selectors allow you to specify filter and sort criteria when retrieving Bing Ads entities such as keywords and campaigns.  Selectors provide functionality roughly equivalent to SQL `WHERE` and `ORDER BY` clauses. The selector class supports the following methods.
 
 - <code>withCondition()</code> &mdash; analogous to a SQL `WHERE` clause. Use to specify conditions that entities must meet to be selected. If multiple conditions are used, the selector returns only entities that match all of the specified conditions.<br />Example:<br />

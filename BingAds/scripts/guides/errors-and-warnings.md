@@ -11,6 +11,8 @@ ms.topic: "article"
 
 # Errors and Warnings
 
+[!INCLUDE[preview-note](../includes/preview-note.md)]
+
 When you update an entity’s properties and the update fails, a warning message is written to the [Change Log](./change-and-text-logs#change-log). Because exceptions are not thrown in this case, you should test each set operation as shown in the example. The example attempts to set the campaign’s budget. Because the amount is not valid, the call fails and a warning message is written to the Change Log.
 
 ```javascript

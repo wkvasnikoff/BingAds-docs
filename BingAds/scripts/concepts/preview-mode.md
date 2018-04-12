@@ -11,6 +11,8 @@ ms.topic: "article"
 
 # Preview Mode
 
+[!INCLUDE[preview-note](../includes/preview-note.md)]
+
 Preview mode lets you test your script without it making changes to the actual campaign data. Instead, you’re shown the results as if the script were executed. This can reduce the amount of time spent setting up test cases. When you're satisfied with the script's output, you can run the script or schedule it to run later.
 
 Preview mode is specific to Bing Ads components. Calls to other services will execute as normal. For example, if a script sends an email it is sent whether or not the script is executed in preview mode. Likewise, spreadsheet updates are made whether the script is executed in preview mode or not. 

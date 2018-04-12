@@ -11,6 +11,8 @@ ms.topic: "article"
 
 # Main Function
 
+[!INCLUDE[preview-note](../includes/preview-note.md)]
+
 Unlike JavaScript that executes in a browser, Bing Ads Scripts must define a `main()` function that contains the program logic you want to execute. You may also define custom functions but the main function is the scripts entry point where execution begins.  For example, the following script defines a main function that calls a custom function named getAllCampaigns.
 
 ```javascript

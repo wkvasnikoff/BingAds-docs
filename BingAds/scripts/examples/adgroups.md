@@ -1,5 +1,7 @@
 # Ad Groups
 
+[!INCLUDE[preview-note](../includes/preview-note.md)]
+
 ## Add an ad group
 ```javascript
 function addAdGroup(campaignName, adGroupName) {

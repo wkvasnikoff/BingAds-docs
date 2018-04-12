@@ -1,5 +1,7 @@
 # Keywords
 
+[!INCLUDE[preview-note](../includes/preview-note.md)]
+
 ## Add a keyword to an existing ad group
 ```javascript
 function addKeyword(adGroupName) {

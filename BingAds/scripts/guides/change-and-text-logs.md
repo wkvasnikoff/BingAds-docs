@@ -10,6 +10,9 @@ ms.topic: "article"
 ---
 
 # Change and Text Logs
+
+[!INCLUDE[preview-note](../includes/preview-note.md)]
+
 Bing Ads Scripts provides two types of logs: change logs and text logs.
 
 ## Change Log

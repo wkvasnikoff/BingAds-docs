@@ -11,6 +11,8 @@ ms.topic: "article"
 
 # Builders
 
+[!INCLUDE[preview-note](../includes/preview-note.md)]
+
 Creating an entity is a multi-step process. 
 
 1. Get a builder object and use it to specify the entity’s properties. 

@@ -11,6 +11,8 @@ ms.topic: "article"
 
 # Iterators
 
+[!INCLUDE[preview-note](../includes/preview-note.md)]
+
 Iterators are used to enumerate items in a list such as a list of keywords or campaigns. Iterators are similar to arrays but because the list size is not known it is not possible to use an index to directly access an item. Iterators also help reduce memory pressure by loading only a single item at a time rather than the entire set of items.  Methods defined on iterators are as follows:
 
 - <code>boolean hasNext()</code> &mdash; Returns true if the current position is not the last element in the list.
