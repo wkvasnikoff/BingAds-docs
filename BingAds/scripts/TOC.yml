@@ -8,8 +8,8 @@
       href: /bingads/scripts/concepts/authorization
     - name: Bid Strategies
       href: /bingads/scripts/concepts/bid-strategies
-    - name: Preview Mode
-      href: /bingads/scripts/concepts/preview-mode          
+    - name: Main Function
+      href: /bingads/scripts/guides/main-function
     - name: Selectors
       href: /bingads/scripts/concepts/selectors      
     - name: Iterators
@@ -18,12 +18,12 @@
       href: /bingads/scripts/concepts/builders
 - name: Guides
   items:
-    - name: Main Function
-      href: /bingads/scripts/guides/main-function    
     - name: Errors and Warnings
       href: /bingads/scripts/guides/errors-and-warnings
     - name: Change and Text Logs
       href: /bingads/scripts/guides/change-and-text-logs
+    - name: Preview Mode
+      href: /bingads/scripts/concepts/preview-mode
 - name: Examples
   href: /bingads/scripts/examples/
   items:
