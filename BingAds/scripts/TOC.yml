@@ -24,7 +24,7 @@
       href: /bingads/scripts/guides/change-and-text-logs
     - name: Preview Mode
       href: /bingads/scripts/concepts/preview-mode
-- name: Examples
+- name: Code Examples
   href: /bingads/scripts/examples/
   items:
     - name: Ad Groups
