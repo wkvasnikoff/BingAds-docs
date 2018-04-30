@@ -16,7 +16,7 @@
       href: /bingads/scripts/concepts/iterators
     - name: Builders
       href: /bingads/scripts/concepts/builders
-- name: Guides
+- name: Technical Guides
   items:
     - name: Errors and Warnings
       href: /bingads/scripts/guides/errors-and-warnings
