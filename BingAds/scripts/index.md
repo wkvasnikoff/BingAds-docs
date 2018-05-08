@@ -1,4 +1,4 @@
-# Overview
+# Bing Ads Scripts Overview
 
 [!INCLUDE[preview-note](./includes/preview-note.md)]
 
