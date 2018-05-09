@@ -24,6 +24,7 @@ while(campaignIterator.hasNext()) {
 [withBiddingStrategy(String biddingStrategy)](#withbiddingstrategy~string-biddingstrategy~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the ad group's bidding strategy.
 [withCpc(double cpc)](#withcpc~double-cpc~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the maximum CPC bid to use for this new ad group.
 [withCustomParameters(Object customParameters)](#withcustomparameters~object-customparameters~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the ad group's custom parameters.
+[withLanguage(String language)](#withlanguage~string-language~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the language of this ad group.
 [withName(String name)](#withname~string-name~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the name of this ad group.
 [withStatus(String status)](#withstatus~string-status~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the status of this ad group.
 [withTrackingTemplate(String trackingTemplate)](#withtrackingtemplate~string-trackingtemplate~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the tracking template of this ad group.
@@ -71,6 +72,18 @@ customParameters|Object|Custom parameters of the ad group in the form:<br /><br 
 |Type|Description|
 |-|-
 [AdGroupBuilder](./AdGroupBuilder)|Ad group builder with the custom parameters applied.
+
+## <a name="withlanguage~string-language~></a>withLanguage(String language)
+Sets the language of this ad group.
+
+### Arguments:
+|Name|Type|Description|
+|-|-|-
+language|String|Ad group's language.
+### Returns:
+|Type|Description|
+|-|-
+[AdGroupBuilder](./AdGroupBuilder)|Ad group builder with the language applied.
 
 ## <a name="withname~string-name~"></a>withName(String name)
 Sets the name of this ad group.

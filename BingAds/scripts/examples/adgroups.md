@@ -15,6 +15,7 @@ function addAdGroup() {
     var adGroupOperation = campaign.newAdGroupBuilder()
         .withName(adGroupName)
         .withCpc(1.2)
+        .withLanguage("English")
         .build();
     var adGroup = adGroupOperation.getResult();
   }

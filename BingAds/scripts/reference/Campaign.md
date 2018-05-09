@@ -15,6 +15,7 @@ Represents a campaign. For more information, see [Campaign](/bingads/guides/enti
 [isEnabled](#isenabled)|boolean|Returns a Boolean value that determines if this campaign is enabled.
 [isPaused](#ispaused)|Boolean|Returns a Boolean value that indicates if this campaign is paused.
 [isRemoved](#isremoved)|Boolean|Returns a Boolean value that indicates if this campaign is removed (deleted).
+[newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder)|Returns a new AdGroupBuilder.
 [pause](#pause)|void|Pauses this campaign.
 [remove](#remove)|void|Removes this campaign.
 [setName(String name)](#setname~string-name~)|void|Sets the name of this campaign.
@@ -122,6 +123,14 @@ Returns a Boolean value that indicates if this campaign is removed (deleted).
 |Type|Description|
 |-|-
 Boolean|Boolean value that determines if this campaign is removed.
+
+## <a name="newadgroupbuilder"></a>newAdGroupBuilder
+Returns a new AdGroupBuilder.
+
+### Returns:
+|Type|Description|
+|-|-
+[AdGroupBuilder](./AdGroupBuilder)|New AdGroupBuilder.
 
 ## <a name="pause"></a>pause
 Pauses this campaign.

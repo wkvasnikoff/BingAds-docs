@@ -28,4 +28,4 @@ For more information, see [Bid Strategy Types](/bingads/guides/budget-bid-strate
 ### Next Steps
 
 > [!div class="nextstepaction"]
-> [Review the reference guide](../reference/BingAdsApp.md)
+> [Learn about IDs](./ids.md)
