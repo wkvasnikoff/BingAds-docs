@@ -76,7 +76,7 @@ function getKeywordStats() {
     var keywordIterator = adGroup.keywords().get();
     while (keywordIterator.hasNext()) {
       var keyword = keywordIterator.next();
-      var stats = keyword.getStatsFor('LAST_MONTH');
+      var stats = keyword.getStats();
       Logger.log(adGroup.getName() + ', ' + keyword.getText() + ', ' +
           stats.getClicks() + ', ' + stats.getImpressions());
     }
