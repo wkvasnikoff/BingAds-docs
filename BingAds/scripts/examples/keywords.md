@@ -4,7 +4,8 @@
 
 ## Add a keyword to an existing ad group
 ```javascript
-function addKeyword(adGroupName) {
+function addKeyword() {
+  var adGroupName = 'YOUR AD GROUP NAME';
   var adGroupIterator = BingAdsApp.adGroups()
       .withCondition('Name = "' + adGroupName + '"')
       .get();
@@ -22,14 +23,16 @@ function addKeyword(adGroupName) {
 
 ## Pause an existing keyword in an ad group
 ```javascript
-function pauseKeywordInAdGroup(adGroupName, keywords) {
+function pauseKeywordInAdGroup() {
+  var adGroupName = 'YOUR AD GROUP NAME';
+  var keywordText = 'YOUR KEYWORD TEXT';
   var adGroupIterator = BingAdsApp.adGroups()
       .withCondition('Name = "' + adGroupName + '"')
       .get();
   if (adGroupIterator.hasNext()) {
     var adGroup = adGroupIterator.next();
     var keywordIterator = adGroup.keywords()
-        .withCondition('Text="' + keywords + '"').get();
+        .withCondition('Text="' + keywordText + '"').get();
     while (keywordIterator.hasNext()) {
       var keyword = keywordIterator.next();
       keyword.pause();
@@ -40,7 +43,8 @@ function pauseKeywordInAdGroup(adGroupName, keywords) {
 
 ## Get all keywords in an ad group
 ```javascript
-function getKeywordsInAdGroup(adGroupName) {
+function getKeywordsInAdGroup() {
+  var adGroupName = 'YOUR AD GROUP NAME';
   var keywordIterator = BingAdsApp.keywords()
       .withCondition('AdGroupName = "' + adGroupName + '"')
       .get();
@@ -62,8 +66,8 @@ function formatKeyword(keyword) {
 
 ## Get stats for all keywords in an ad group
 ```javascript
-
-function getKeywordStats(adGroupName) {
+function getKeywordStats() {
+  var adGroupName = 'YOUR AD GROUP NAME';
   var adGroupIterator = BingAdsApp.adGroups()
       .withCondition('Name = "' + adGroupName + '"')
       .get();

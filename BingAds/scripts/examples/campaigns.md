@@ -17,7 +17,8 @@ function getAllCampaigns() {
 
 ## Get a campaign by name
 ```javascript
-function getCampaignsByName(campaignName) {
+function getCampaignsByName() {
+  var campaignName = 'YOUR CAMPAIGN NAME';
   var campaignIterator = BingAdsApp.campaigns()
       .withCondition('Name = "' + campaignName + '"')
       .get();
@@ -32,7 +33,8 @@ function getCampaignsByName(campaignName) {
 
 ## Get a campaign's stats
 ```javascript
-function getCampaignStats(campaignName) {
+function getCampaignStats() {
+  var campaignName = 'YOUR CAMPAIGN NAME';
   var campaignIterator = BingAdsApp.campaigns()
       .withCondition('Name = "' + campaignName + '"')
       .get();
@@ -47,7 +49,8 @@ function getCampaignStats(campaignName) {
 
 ## Pause a campaign
 ```javascript
-function pauseCampaign(campaignName) {
+function pauseCampaign() {
+  var campaignName = 'YOUR CAMPAIGN NAME';
   var campaignIterator = BingAdsApp.campaigns()
       .withCondition('Name = "' + campaignName + '"')
       .get();
@@ -60,7 +63,8 @@ function pauseCampaign(campaignName) {
 
 ## Get a campaign's device bid modifiers
 ```javascript
-function getCampaignBidModifiers(campaignName) {
+function getCampaignBidModifiers() {
+  var campaignName = 'YOUR CAMPAIGN NAME';
   var campaignIterator = BingAdsApp.campaigns()
       .withCondition('Name = "' + campaignName + '"')
       .get();

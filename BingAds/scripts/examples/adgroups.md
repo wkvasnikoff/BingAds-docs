@@ -4,7 +4,9 @@
 
 ## Add an ad group
 ```javascript
-function addAdGroup(campaignName, adGroupName) {
+function addAdGroup() {
+  var campaignName = 'YOUR CAMPAIGN NAME';
+  var adGroupName = 'YOUR AD GROUP NAME';
   var campaignIterator = BingAdsApp.campaigns()
       .withCondition('Name = "' + campaignName + '"')
       .get();
@@ -33,7 +35,8 @@ function getAllAdGroups() {
 
 ## Get an ad group by name
 ```javascript
-function getAdGroupByName(adGroupName) {
+function getAdGroupByName() {
+  var adGroupName = 'YOUR AD GROUP NAME';
   var adGroupIterator = BingAdsApp.adGroups()
       .withCondition('Name = "' + adGroupName + '"')
       .get();
@@ -47,7 +50,8 @@ function getAdGroupByName(adGroupName) {
 
 ## Get an ad group's stats
 ```javascript
-function getAdGroupStats(adGroupName) {
+function getAdGroupStats() {
+  var adGroupName = 'YOUR AD GROUP NAME';
   var adGroupIterator = BingAdsApp.adGroups()
       .withCondition('Name = "' + adGroupName + '"')
       .get();
@@ -62,7 +66,8 @@ function getAdGroupStats(adGroupName) {
 
 ## Pause an ad group
 ```javascript
-function pauseAdGroup(adGroupName) {
+function pauseAdGroup() {
+  var adGroupName = 'YOUR AD GROUP NAME';
   var adGroupIterator = BingAdsApp.adGroups()
       .withCondition('Name = "' + adGroupName + '"')
       .get();
@@ -77,7 +82,8 @@ function pauseAdGroup(adGroupName) {
 
 ## Enable an ad group
 ```javascript
-function enableAdGroup(adGroupName) {
+function enableAdGroup() {
+  var adGroupName = 'YOUR AD GROUP NAME';
   var adGroupIterator = BingAdsApp.adGroups()
       .withCondition('Name = "' + adGroupName + '"')
       .get();
