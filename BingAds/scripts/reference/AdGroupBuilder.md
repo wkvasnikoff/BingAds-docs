@@ -74,7 +74,7 @@ customParameters|Object|Custom parameters of the ad group in the form:<br /><br 
 [AdGroupBuilder](./AdGroupBuilder)|Ad group builder with the custom parameters applied.
 
 ## <a name="withlanguage~string-language~></a>withLanguage(String language)
-Sets the language of this ad group.
+Sets the language of this ad group. If language is specified at the campaign level, language is optional. If language is not specified at the campaign level then language must be specified at the ad group level.
 
 ### Arguments:
 |Name|Type|Description|
