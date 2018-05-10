@@ -18,7 +18,7 @@ Selectors allow you to specify filter and sort criteria when retrieving Bing Ads
 - <code>withCondition()</code> &mdash; analogous to a SQL `WHERE` clause. Use to specify conditions that entities must meet to be selected. If multiple conditions are used, the selector returns only entities that match all of the specified conditions.<br />Example:<br />
     &nbsp;&nbsp;&nbsp;`withCondition('Name STARTS_WITH "Contoso"')`<br /><br />
 - <code>withIds()</code> &mdash; analogous to a SQL `IN` clause. Use to specify the IDs of entities to select.<br />&nbsp;Example:<br />
-    &nbsp;&nbsp;&nbsp;`withIds([1,2,3,4])`<br /><br />
+    &nbsp;&nbsp;&nbsp;`withIds(["1","2","3","4"])`<br /><br />
 - <code>forDateRange()</code> &mdash; Use to return entities matching a specified date range. If a condition specifies a metric column, you must include forDateRange in the selector's chain.<br />&nbsp;Example:<br />
     &nbsp;&nbsp;&nbsp;`forDateRange("LAST_14_DAYS")`<br /><br />
 - <code>orderBy()</code> &mdash; analogous to a SQL `ORDER BY` clause. Use to order the returned entities by a specified field.<br />&nbsp;Example:<br />

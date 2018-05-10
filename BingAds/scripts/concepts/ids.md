@@ -9,7 +9,7 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-IDs
+# IDs
 
 Most entities in Bing Ads expose a getId() method that returns their identifier. The identifier is a string that uniquely identifies the entity.
 
