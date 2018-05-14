@@ -23,7 +23,7 @@
     - name: Change and Text Logs
       href: /bingads/scripts/guides/change-and-text-logs
     - name: Preview Mode
-      href: /bingads/scripts/concepts/preview-mode
+      href: /bingads/scripts/guides/preview-mode
 - name: Code Examples
   href: /bingads/scripts/examples/
   items:
