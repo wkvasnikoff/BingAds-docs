@@ -9,7 +9,7 @@
     - name: Bid Strategies
       href: /bingads/scripts/concepts/bid-strategies
     - name: Main Function
-      href: /bingads/scripts/guides/main-function
+      href: /bingads/scripts/concepts/main-function
     - name: Selectors
       href: /bingads/scripts/concepts/selectors      
     - name: Iterators
