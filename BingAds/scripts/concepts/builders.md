@@ -44,13 +44,57 @@ if (keywordOperation.isSuccessful()) {
   var errors = keywordOperation.getErrors();
 }
 ```
+
+## Performance Considerations
+
+Bing Ads Scripts execute operations asynchronously, this allows scripts to group operations into batches enabling better performance. Calling Operation methods like `isSuccessful()` and `getResult()` causes Bing Ads Scripts to immediately execute pending operations and can lead to reduced performance. Instead, create an array to hold the operations, then iterate through that array to retrieve the results. 
+
+### Poor Performance
+``` javascript
+for (var i = 0; i < keywords.length; i++)
+  var keywordOperation = BingAdsApp.adGroups().get().next()
+    .newKeywordBuilder()
+    .withText(keywords[i])
+    .build();
+
+  // Bad: retrieving the result in the same
+  // loop that creates the operation
+  // leads to poor performance.
+  var newKeyword =
+      keywordOperation.getResult();
+  newKeyword.applyLabel("New keywords”);
+}
+```
+
+### Good Performance
+``` javascript
+// Create an array to hold the operations
+var operations = [];
+
+for (var i = 0; i < keywords.length; i++) {
+  var keywordOperation = BingAdsApp.adGroups().get().next()
+    .newKeywordBuilder()
+    .withText(keywords[i])
+    .build();
+  operations.push(keywordOperation);
+}
+
+// Process the operations separately. Allows
+// Bing Ads scripts to group operations into
+// batches.
+for (var i = 0; i < operations.length; i++) {
+  var newKeyword = operations[i].getResult();
+  newKeyword.applyLabel("New keywords”);
+}
+```
+
 See also:
 - [AdGroupBuilder](../reference/AdGroupBuilder)
 - [ExpandedTextAdBuilder](../reference/ExpandedTextAdBuilder)
 - [KeywordBuilder](../reference/KeywordBuilder)
 - [NegativeKeywordListBuilder](../reference/NegativeKeywordListBuilder)
 
-### Next Steps
+## Next Steps
 
 > [!div class="nextstepaction"]
 > [Learn about preview mode](./preview-mode.md)
